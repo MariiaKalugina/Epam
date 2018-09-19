@@ -1,12 +1,12 @@
 /*
  * This program defines color of traffic lights.
  */
-package com.company;
+package com.company.trafficLights;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IllegalAccessException {
+    public static void main(String[] args) throws IllegalArgumentException {
         int minute;
 
         System.out.print("Введите минуту: ");
