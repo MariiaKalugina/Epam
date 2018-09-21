@@ -17,4 +17,5 @@ public class TrafficLights {
             throw new IllegalArgumentException();
         }
     }
+
 }
