@@ -10,12 +10,8 @@ public class Main {
         System.out.print("Введите предложение: ");
         Scanner inSentence = new Scanner(System.in);
         String sentence = inSentence.nextLine();
-        char[] charSentence = sentence.toCharArray();
-        for (int i = 0; i < charSentence.length / 2; i++) {
-            char temp = charSentence[i];
-            charSentence[i] = charSentence[charSentence.length - 1 - i];
-            charSentence[charSentence.length - 1 - i] = temp;
-        }
-        System.out.println(charSentence);
+        StringBuilder builderSentence = new StringBuilder(sentence.subSequence(0, sentence.length()));
+        builderSentence.reverse();
+        System.out.println(builderSentence);
     }
 }
