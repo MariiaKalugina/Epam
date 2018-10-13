@@ -1,7 +1,7 @@
 /*
  * Swap letters in sentence and output result.
  */
-package com.company.stringSwapLetters;
+package com.company.string.swap;
 
 import java.util.Scanner;
 
