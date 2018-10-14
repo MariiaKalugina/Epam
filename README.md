@@ -27,7 +27,7 @@
 
 [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/arrays/matrix)
 
-12.273. Напечатать слова, образованные четными элементами каждой строки массива.  [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/arrays/even)
+12.273. Напечатать слова, образованные четными элементами каждой строки массива.  [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/arrays/even/odd)
 
 12.274. Напечатать слова, образованные нечетными элементами каждого столбца
-массива. [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/arrays/even)
+массива. [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/arrays/even/odd)
