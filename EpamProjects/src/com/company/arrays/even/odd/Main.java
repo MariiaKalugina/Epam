@@ -1,4 +1,4 @@
-package com.company.arrays.even;
+package com.company.arrays.even.odd;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +7,8 @@ public class Main {
                 {'k', 'l', 'm', 'n', 'o'},
                 {'p', 'q', 'r', 's', 't'},
                 {'w', 'x', 'y', 'z', '!'}};
-        EvenSymbols es = new EvenSymbols(matrix);
-        es.printEvenItems();
-        System.out.println();
-        es.printOddItems();
+        EvenOddSymbols evenOddSymbols = new EvenOddSymbols(matrix);
+        System.out.println(evenOddSymbols.getEvenItems());
+        System.out.println(evenOddSymbols.getOddItems());
     }
 }
