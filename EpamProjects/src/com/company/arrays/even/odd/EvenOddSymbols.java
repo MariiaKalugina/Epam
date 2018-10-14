@@ -34,7 +34,7 @@ public class EvenOddSymbols {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (j % 2 == 0) {
-                    result += matrix[i][j];
+                    result += matrix[j][i];
                 }
             }
             result += " ";
