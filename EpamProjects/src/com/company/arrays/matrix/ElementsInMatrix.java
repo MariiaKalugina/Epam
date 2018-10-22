@@ -18,6 +18,7 @@ public class ElementsInMatrix {
         }
         return result;
     }
+
     public String getElementsFromUpToDown(char[][] matrix) {
         String result = "";
         if (matrix.length != 5 || isFiveElementsInLine(matrix)) {
@@ -36,7 +37,7 @@ public class ElementsInMatrix {
         return result;
     }
 
-    private boolean isFiveElementsInLine(char[][] matrix){
+    private boolean isFiveElementsInLine(char[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i].length != 5) {
                 return true;
