@@ -13,9 +13,9 @@ public class Main {
     }
 
     public static void print() {
-        System.out.println(new Factorial().getFactorial(10));
-        System.out.println(new Exponent().getExponent(10.0f, 2));
-        System.out.println(new SumOfNumeral().getSumOfNumeral(4));
-        System.out.println(new SumOfNumeral().getAmountOfNumeral(4));
+        System.out.println("Factorial: " + new Factorial().getFactorial(10));
+        System.out.println("Exponentiation: " + new Exponent().getExponent(10.0f, 2));
+        System.out.println("Sum of numeral: " + new SumOfNumeral().getSumOfNumeral(4));
+        System.out.println("Amount of numeral: " + new SumOfNumeral().getAmountOfNumeral(4));
     }
 }
