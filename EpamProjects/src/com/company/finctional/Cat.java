@@ -1,6 +1,6 @@
 package com.company.finctional;
 
-public class Cat implements WithNameAndAge{
+public class Cat implements WithNameAndAge {
     private String name;
     private int age;
     private String color;
