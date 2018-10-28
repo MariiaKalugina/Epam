@@ -42,3 +42,5 @@
 10.43. Написать рекурсивную функцию:
 * вычисления суммы цифр натурального числа;
 * вычисления количества цифр натурального числа.
+
+## Task 5 - Functional Interfaces [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/finctional)
