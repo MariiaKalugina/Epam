@@ -1,5 +1,5 @@
 /**
- * Task 12.271
+ * Task 12.272
  * Find and output symbols in two-dimensional array 5x5.
  * a) output in order: from left to right
  * b) output in order: from up to down

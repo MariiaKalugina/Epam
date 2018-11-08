@@ -42,7 +42,7 @@ public class EvenOddSymbols {
         return result;
     }
 
-    private boolean isEmpty() {
+    public boolean isEmpty() {
         if (matrix == null) {
             return true;
         }

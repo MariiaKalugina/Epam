@@ -1,3 +1,9 @@
+/**
+ * Task 12.272 - 12.273
+ * Find and output:
+ * a) odd elements in each line
+ * b) even elements in each row
+ */
 package com.company.arrays.even.odd;
 
 public class Main {
