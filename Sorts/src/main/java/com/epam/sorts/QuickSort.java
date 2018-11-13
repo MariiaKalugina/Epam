@@ -4,7 +4,7 @@
  * From both ends, swap elements and make left elements < pivot and all right > pivot
  * Recursively sort left part and right part
  */
-package com.epam.search;
+package com.epam.sorts;
 
 public class QuickSort {
     void sort(int array[], int low, int high) {

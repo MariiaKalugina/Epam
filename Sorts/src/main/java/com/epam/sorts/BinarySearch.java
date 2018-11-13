@@ -2,7 +2,7 @@
  * The class provides a static method for binary
  * searching for an integer in a sorted array of integers.
  */
-package com.epam.search;
+package com.epam.sorts;
 
 public class BinarySearch {
     int binarySearch(int elementToFind, int[] array) {

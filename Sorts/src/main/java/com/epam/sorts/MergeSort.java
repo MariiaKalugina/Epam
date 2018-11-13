@@ -2,7 +2,7 @@
  * The class divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.
  * The mergeSort() function is used for merging two halves.
  */
-package com.epam.search;
+package com.epam.sorts;
 
 public class MergeSort {
     private int[] inputArray;

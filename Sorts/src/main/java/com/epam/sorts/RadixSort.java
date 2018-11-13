@@ -1,7 +1,7 @@
 /**
  * Radix sort
  */
-package com.epam.search;
+package com.epam.sorts;
 
 import java.util.Arrays;
 

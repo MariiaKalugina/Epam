@@ -6,7 +6,7 @@
  *  Radix Sort
  *  Quick Sort
  */
-package com.epam.search;
+package com.epam.sorts;
 
 import java.io.BufferedReader;
 import java.io.IOException;
