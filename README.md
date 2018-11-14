@@ -45,7 +45,9 @@
 
 ## Task 5 - Functional Interfaces [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/EpamProjects/src/com/company/finctional)
 
-## Task 6 - ATM
+## Task 6 - ATM [Посмотреть](https://github.com/MariiaKalugina/Epam/tree/master/Bank/src)
+#### Задание
+Написать реализацию операций с банковским счетом, используя потоки.
 
 ## Task 7 - Sea Battle
 
