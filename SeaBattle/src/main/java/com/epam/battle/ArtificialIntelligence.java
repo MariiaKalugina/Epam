@@ -37,9 +37,6 @@ public class ArtificialIntelligence {
             }
         } else {
             randomCoordinate();
-            isShipFound = false;
-            isShipVertical = false;
-            isFirstCheck = true;
             System.out.printf("I'm shot to " + y + " " + x + "!\n");
             System.out.print("And my result: ");
             lastShip = field.getCell(coordinate.getX(), coordinate.getY());
@@ -55,7 +52,7 @@ public class ArtificialIntelligence {
     private void randomCoordinate() {
         while (true) {
             Random random = new Random();
-            initY = (char) (random.nextInt('j' - 'a') + 'a');
+            initY = (char) (random.nextInt('k' - 'a') + 'a');
             initX = 1 + (int) (Math.random() * 10);
             coordinate = new Coordinate(initY, initX);
             if (field.getCell(coordinate.getX(), coordinate.getY()) >= 0)
@@ -63,38 +60,46 @@ public class ArtificialIntelligence {
         }
         x = initX;
         y = initY;
+        isShipFound = false;
+        isShipVertical = false;
+        isFirstCheck = true;
     }
 
     private boolean checkHorizontal() {
-        if (isFirstCheck && y != 'a') {
-            y--;
-            if (!checkCoordinate(y, x)) {
+        if (isFirstCheck) {
+            if (y != 'a') {
+                y--;
+            } else {
+                y = initY;
                 isFirstCheck = false;
-                return false;
-            } else return true;
-
-        } else if (y != 'j') {
-            isFirstCheck = false;
-            y++;
-            if (!checkCoordinate(y, x)) {
-                isShipVertical = true;
-                isFirstCheck = true;
-                return false;
             }
-            return true;
-        } else {
-            isFirstCheck = true;
-            isShipVertical = true;
+        }
+        if (!isFirstCheck) {
+            if (y != 'j') {
+                y++;
+            } else {
+                y = initY;
+                isFirstCheck = true;
+                isShipVertical = true;
+            }
+        }
+        if (isShipVertical) {
+            return checkVertical();
+        }
+        if (!checkCoordinate(y, x)) {
+            isShipVertical = !isFirstCheck;
+            isFirstCheck = isShipVertical;
+            y = initY;
             return false;
         }
+        return true;
     }
 
     private boolean checkCoordinate(char y, int x) {
         coordinate = new Coordinate(y, x);
+        System.out.printf("I'm shot to " + y + " " + x + "!\n");
+        System.out.print("And my result: ");
         if (!coordinate.getShot(field, ships)) {
-            System.out.printf("I'm shot to " + y + " " + x + "!\n");
-            System.out.print("And my result: ");
-            isFirstCheck = false;
             y = initY;
             x = initX;
             return false;
@@ -103,16 +108,20 @@ public class ArtificialIntelligence {
     }
 
     private boolean checkVertical() {
-        if (isFirstCheck && x != 1) {
+        if (x == 1) {
+            x = initX;
+            isFirstCheck = false;
+        }
+        if (isFirstCheck) {
             x--;
             if (!checkCoordinate(y, x)) {
                 isFirstCheck = false;
                 return false;
             } else return true;
         } else {
-            isFirstCheck = false;
             x++;
             return checkCoordinate(y, x);
         }
     }
 }
+
