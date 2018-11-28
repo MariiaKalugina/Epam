@@ -1,9 +1,8 @@
 /**
  * Class generation ships on field: get random coordinate and route of ship, check for ships near.
  */
-package com.epam.battle;
 
-import com.epam.battle.ships.Ship;
+import ships.Ship;
 
 public class FieldGeneration {
     private Field fieldWithShips = new Field();

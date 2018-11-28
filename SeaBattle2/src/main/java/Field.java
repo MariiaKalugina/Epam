@@ -1,7 +1,6 @@
 /**
  * Class of map with ships.
  */
-package com.epam.battle;
 
 public class Field {
     int[][] map = new int[10][10];

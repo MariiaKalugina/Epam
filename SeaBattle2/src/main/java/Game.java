@@ -1,9 +1,8 @@
 /**
  * Class with start game: initialise players ships, fields, run game process while either you win or computer.
  */
-package com.epam.battle;
 
-import com.epam.battle.ships.*;
+import ships.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,9 +1,8 @@
 /**
  * Class for computer playing: random shot, try to kill ship when hurt it.
  */
-package com.epam.battle;
 
-import com.epam.battle.ships.Ship;
+import ships.Ship;
 
 import java.util.Random;
 

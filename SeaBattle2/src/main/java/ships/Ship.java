@@ -1,7 +1,7 @@
 /**
  * Class with main variables and methods for ships.
  */
-package com.epam.battle.ships;
+package ships;
 
 public abstract class Ship {
     int size;

@@ -5,7 +5,6 @@
  * You ships and ships of your enemy generate automatically.
  * Good luck!
  */
-package com.epam.battle;
 
 public class Main {
     public static void main(String[] args) {

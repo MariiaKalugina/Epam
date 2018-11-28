@@ -1,9 +1,8 @@
 /**
  * Class for user playing: get coordinate, convert letter, shot and fill cells certain value.
  */
-package com.epam.battle;
 
-import com.epam.battle.ships.Ship;
+import ships.Ship;
 
 public class Coordinate {
     private int x;

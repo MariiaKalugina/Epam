@@ -1,9 +1,9 @@
-package com.epam.battle.ships;
+package ships;
 
-public class ThreeDeskShip extends Ship {
+public class OneDeskShip extends Ship {
 
-    public ThreeDeskShip(int i) {
-        size = 3;
+    public OneDeskShip(int i) {
+        size = 1;
         index = i;
         coordinateX = new int[size];
         coordinateY = new int[size];

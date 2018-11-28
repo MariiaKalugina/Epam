@@ -1,7 +1,6 @@
 /**
  * Class with display field on console.
  */
-package com.epam.battle;
 
 public class Visualization {
     public String[][] map = {{"  |a b c d e f g h i j |"},
